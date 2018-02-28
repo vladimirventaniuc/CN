@@ -17,7 +17,14 @@ def index(request):
     else:
         asociativ="asociativa"
 
-    context={'uuu':uuu,'asociativ':asociativ}
+    asociativ2 = ex2Mul(0.01, uuu, uuu)
+    print("11111111111111111111111111111111111111111")
+    if (asociativ2 == False):
+        asociativ2 = "neasociativa"
+    else:
+        asociativ2 = "asociativa"
+
+    context={'uuu':uuu,'asociativ':asociativ,'asociativ2':asociativ2}
     return render(request,'tema_unu/index.html',context)
 @csrf_exempt
 def multiply(request):

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tema_unu',
+    'tema_doi',
 ]
 
 MIDDLEWARE = [

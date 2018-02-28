@@ -159,6 +159,7 @@ for (let i=0;i<n;i++){
             if( !$("#"+text+"element"+i+j).val() )
             return false
             }
-   return true
+
 }
+return true
 }

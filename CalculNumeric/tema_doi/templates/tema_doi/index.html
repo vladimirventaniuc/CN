@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'tema_doi/css/style.css' %}" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{% static 'tema_doi/js/index.js' %}"></script>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Tema 1</title>
+
+    </head>
+<body>
+<h1 id="tema" >Tema 2</h1>
+<div class="exercitiu">
+  <a href="#0" id="ex1" class="ex1">Exercitiul 1</a>
+</div>
+<div id="ex1_wrap" class="ex1_wrap" style="display: none;">
+    <div id="inpt">Dati dimensiunea matricii</div>
+    <input id="number" type="number">
+    <button id="creare">Afiseaza matricile</button>
+</div>
+
+
+<div class="sidebyside">
+    <table id="matrixA" class="tableAB">
+
+    </table>
+        <br>
+    <table id="matrixB" class="tableAB">
+
+    </table>
+</div>
+
+
+<br>
+<br>
+<br>
+    <form onsubmit="return false;">
+        {% csrf_token %}
+        <button id="calculare" onclick="send()" style="display: none;">Calculeaza</button>
+    </form>
+<div id="displayResponserau" style="display: none;">
+    <p >Matricea este singulara</p>
+</div>
+<div id="displayResponsebun" style="display: none;">
+    <p id="a1">Matricea este nesingulara</p>
+</div>
+<div id="verificare1" style="display: none;">
+    <p id="a2">verificare 1</p>
+</div>
+<div id="verificare2" style="display: none;">
+    <p id="a3">verificare 2</p>
+</div>
+<div id="verificare3" style="display: none;">
+    <p id="a4">verificare 3</p>
+</div>
+
+</div>
+<div class="exercitiu">
+
+</body>
+</html>
