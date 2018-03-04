@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'tema_trei/css/style.css' %}" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{% static 'tema_trei/js/index.js' %}"></script>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Tema 3</title>
+
+    </head>
+<body>
+<h1 id="tema" >Tema 3</h1>
+<div class="exercitiu">
+  <a href="#0" id="ex1" class="ex1">Exercitiul 1</a>
+</div>
+<div id="ex1_wrap" class="ex1_wrap" style="display: none;">
+
+<input id="file1" type="file" class = "myFile" name="myFile1"/>
+    <input id="file2" type="file" class = "myFile" name="myFile2"/>
+<input type="button" id="upload" value="upload"/>
+    <br>
+<progress id="prog" value="0" min="0" max="100">
+</progress>
+
+
+<div id="showButtons" style="display: none;" >
+        <input type="button" id="sum" value="Download Sum"/>
+        <input type="button" id="prod" value="Download Product"/>
+    </div>
+<br>
+    <br>
+
+</div>
+
+
+
+<div class="exercitiu">
+  <a href="#0" id="ex2" class="ex1">Exercitiul 2</a>
+</div>
+<div id="ex2_wrap" class="ex1_wrap" style="display: none;">
+
+<input id="file12" type="file" class = "myFile2" name="myFile12"/>
+    <input id="file22" type="file" class = "myFile2" name="myFile22"/>
+<input type="button" id="upload2" value="upload"/>
+    <br>
+<progress id="prog2" value="0" min="0" max="100">
+</progress>
+    <br>
+    <br>
+    <div id="verificare" style="display:none">
+        <p id="p1">Verificarea matricilor din cele doua fisiere a returnat: </p>
+        <p id="p2">Verificarea vectorilor din cele doua fisiere a returnat: </p>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

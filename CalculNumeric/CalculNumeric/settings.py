@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tema_unu',
     'tema_doi',
+    'tema_trei',
 ]
 
 MIDDLEWARE = [
