@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'tema_unu',
     'tema_doi',
     'tema_trei',
+    'tema_patru',
+
 ]
 
 MIDDLEWARE = [

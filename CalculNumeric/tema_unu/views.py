@@ -5,8 +5,10 @@ from django.shortcuts import render
 from django.template import loader
 from django.views.decorators.csrf import csrf_exempt
 
-from tema_unu.functions import *
+
 # Create your views here.
+from tema_unu.functions import *
+
 def index(request):
     print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
     uuu=ex1()[0]

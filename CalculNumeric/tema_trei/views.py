@@ -5,10 +5,9 @@ from django.template import loader
 from django.views.decorators.csrf import csrf_exempt
 
 import json
-from tema_doi.functions import *
-# Create your views here.
-from tema_trei.functions import *
 
+
+from tema_trei.functions import *
 
 def index(request):
 
@@ -28,10 +27,6 @@ def upload(request):
     file.write(data2)
 
     createSumProductFiles("tema_trei/files/a.txt","tema_trei/files/b.txt","tema_trei/files/sum.txt","tema_trei/files/prod.txt")
-
-
-
-
 
     print("############################################")
     try:
