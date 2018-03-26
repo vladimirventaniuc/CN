@@ -1,10 +1,8 @@
 import json
-
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.template import loader
 from django.views.decorators.csrf import csrf_exempt
-
 from tema_doi.functions import *
 def index(request):
 

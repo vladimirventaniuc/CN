@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'tema_doi',
     'tema_trei',
     'tema_patru',
+    'tema_cinci',
+
 
 ]
 

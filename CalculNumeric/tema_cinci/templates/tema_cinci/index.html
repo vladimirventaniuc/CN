@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'tema_cinci/css/style.css' %}" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{% static 'tema_cinci/js/index.js' %}"></script>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Tema 5</title>
+
+    </head>
+<body>
+<h1 id="tema" >Tema 5</h1>
+<div class="exercitiu">
+  <a href="#0" id="ex1" class="ex1">Exercitiul 1</a>
+</div>
+<div id="ex1_wrap" class="ex1_wrap" style="display: none;">
+    <div id="inpt">Dati dimensiunea matricii</div>
+    <input id="number" type="number">
+    <button id="creare">Afiseaza matricile</button>
+
+    <br>
+    <br>
+    <div class="sidebyside">
+        <table id="matrixA" class="tableAB">
+
+        </table>
+
+
+        <br>
+
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <form onsubmit="return false;">
+        {% csrf_token %}
+        <button id="calculare" onclick="send()" style="display: none;">Calculeaza</button>
+    </form>
+    <p id="inversaText" style="display: none;"></p>
+      <table id="matrixC" class="tableAB" style="display: none;">
+      </table>
+    <p id="norma" style="display: none;">Norma este: </p>
+</div>
+</table>
+
+</div>
+
+<div class="exercitiu">
+
+</body>
+</html>
